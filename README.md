@@ -1,2 +1,2 @@
-# myMicrograd
+# myMicrograd - The Good, The Bad, and The part that taught me the most...
 A build of micrograd that implements the functionality present in Pytorch's backprop
