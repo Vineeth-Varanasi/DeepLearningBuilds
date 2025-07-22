@@ -17,7 +17,7 @@ It demonstrates the basics of backpropagation and neural networks.
 - Subsequently, I implemented the backprop logic after multiple trials and errors.
 - The final steps were to link up a group of Value objects to create a Neuron, then a Layer and finally a Multi-Layered Perceptron
 
-## 2 - Makemore implementation
+## 2 - Makemore implementation (part 1)
 This file contains my implementation of the makemore language model.
 
 ### What is makemore?
