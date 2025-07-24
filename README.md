@@ -41,7 +41,7 @@ The neural probabilistic language model (NPLM) is an architecture that uses dist
 - Understanding the Curse of Dimensionality:
 Started by exploring how the number of possible combinations grows exponentially with vocabulary and sequence length, which motivates the need for distributed representations.
 
-- Distributed Representations:
+#### Distributed Representations:
 Learned how associating each character with a feature vector in an n-dimensional space addresses sparsity and enables the model to capture semantic or syntactic similarities.
 
 - Architecture Implementation:
