@@ -31,3 +31,22 @@ makemore is a bigram model built on top of a neural network, written in Python a
 - Finally, training the model using backpropagation proved to be conceptually simple. The loss function used was negative-log-likelihood.
 - The last step was sampling the model and using it to generate cases, in which it did fairly well.
 
+## 3 - Neural Probabilistic Language Model Implementation (Bengio et al., 2003)
+This file documents my implementation of a neural probabilistic language model inspired by Bengio et al. (2003), building on lessons from Karpathy’s makemore MLP and extending the ideas from my previous bigram project.
+
+### What Is the Neural Probabilistic Language Model?
+The neural probabilistic language model (NPLM) is an architecture that uses distributed word (or character) representations in a neural network to predict the next item in a sequence. Unlike traditional bigram or n-gram statistical models, NPLMs use learned vector embeddings, allowing them to generalize better to unseen data and capture relationships between characters or words in a way that classic models cannot.
+
+### My Learning Process
+- Understanding the Curse of Dimensionality:
+Started by exploring how the number of possible combinations grows exponentially with vocabulary and sequence length, which motivates the need for distributed representations.
+
+- Distributed Representations:
+Learned how associating each character with a feature vector in an n-dimensional space addresses sparsity and enables the model to capture semantic or syntactic similarities.
+
+- Architecture Implementation:
+- Built a feed-forward neural network with three main layers:
+- Embedding Layer: Converts input character indices to continuous-valued vectors.
+- Hidden Layer: Processes concatenated embeddings with a non-linearity (tanh), enabling richer feature learning.
+- Output Layer: Projects the hidden activations onto the vocabulary space, producing logits for the next character prediction.
+- Used cross-entropy loss for optimization and backpropagation to train all parameters.
