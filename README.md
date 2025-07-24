@@ -31,7 +31,7 @@ makemore is a bigram model built on top of a neural network, written in Python a
 - Finally, training the model using backpropagation proved to be conceptually simple. The loss function used was negative-log-likelihood.
 - The last step was sampling the model and using it to generate cases, in which it did fairly well.
 
-## 3 - Neural Probabilistic Language Model Implementation (Bengio et al., 2003)
+## 3 - Neural Probabilistic Language Model Implementation (Bengio et al., 2003) - My blog of this project : https://medium.com/@vineethvaranasi06/a-summary-of-neural-probabilistic-language-models-bengio-et-al-2003-and-my-implementation-of-it-825cfe2403fd
 This file documents my implementation of a neural probabilistic language model inspired by Bengio et al. (2003), building on lessons from Karpathy’s makemore MLP and extending the ideas from my previous bigram project.
 
 ### What Is the Neural Probabilistic Language Model?
