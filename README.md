@@ -50,3 +50,21 @@ Learned how associating each character with a feature vector in an n-dimensional
 - Hidden Layer: Processes concatenated embeddings with a non-linearity (tanh), enabling richer feature learning.
 - Output Layer: Projects the hidden activations onto the vocabulary space, producing logits for the next character prediction.
 - Used cross-entropy loss for optimization and backpropagation to train all parameters.
+
+## 4 - Attention in transformer based neural networks - An implementation of the paper https://arxiv.org/pdf/1706.03762, or the core idea of it.
+This file documents my implementation of the heart of modern day LLMs and VLMs. By far one of the most influential papers of our time, the "Transformer", dives deep into how we give a deep learning model better "context" to understand text for NLP, which was later extended to vision models.
+
+### What is the transformer?
+One of the biggest roadblocks to NLP was context. How relevant one token is to another and its meaning. A vector space did not solve this issue as intended, as a sentence can have any one of its words affecting the whole meaning. This context had to be given to a language model in an efficient way. Attention, in a way, is the "attention" that a token gives to another token within its context window. 
+
+### My Learning Process
+ - Understanding how context flows:
+The main challenge in understanding a transformer was its mechanism of assigning "attention" to each token with respect to another. It was easier to grasp due to my work on classical ML and heatmaps. The architecture itself was fairly fascinating, and building it allowed me to make some minor tweaks and understand the overall flow of vectors from input, to "understood output".
+
+#### Distributed Representations:
+ - Inputs (words, images, sounds) are mapped to dense vectors instead of one-hot IDs.
+ - Each dimension captures part of the meaning — info is spread across many neurons.
+ - Similar items end up close in vector space (Paris ≈ London, king - man + woman ≈ queen).
+ - Embeddings allow models to generalize across concepts they’ve never seen together.
+ - Self-Attention and MHA project these embeddings into multiple subspaces, letting different heads focus on different relationships.
+
